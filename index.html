@@ -47,26 +47,31 @@
             font-weight: bold;
             margin: 10px;
             cursor: pointer;
-            transition: all 1s ease;
+            transition: transform 0.3s ease, background-color 0.3s ease;
             overflow: hidden;
             white-space: nowrap;
+            padding: 0;
+            box-sizing: border-box;
         }
+
         .service-button:hover {
-            width: 300px;
-            height: 150px;
             background-color: #2D7A4B;
-            font-size: 16px;
+            font-size: 18px;
             line-height: 1.5;
-            white-space: normal;
-            padding: 15px;
+            transform: scale(1.2); /* Using scale for smooth expansion */
+            padding: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
         }
+
         .service-button:hover::before {
             content: attr(data-description);
             display: block;
+            font-size: 14px;
+            margin-top: 10px;
         }
+
     </style>
 </head>
 <body>
