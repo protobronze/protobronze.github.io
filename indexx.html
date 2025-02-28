@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .banner {
+            width: 100%;
+            height: 200px;
+            background: url('banner.jpg') no-repeat center center/cover;
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+            background-color: #1E5B37;
+            padding: 10px 0;
+        }
+        .menu div {
+            padding: 15px 20px;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .menu div:hover {
+            background-color: #2D7A4B;
+        }
+        .content {
+            display: none;
+        }
+        .content.active {
+            display: block;
+        }
+        .service-button {
+            display: inline-block;
+            width: 200px;
+            height: 80px;
+            background-color: #1E5B37;
+            color: white;
+            text-align: center;
+            line-height: 80px;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px;
+            cursor: pointer;
+            transition: all 1s ease;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .service-button:hover {
+            width: 300px;
+            height: 150px;
+            background-color: #2D7A4B;
+            font-size: 16px;
+            line-height: 1.5;
+            white-space: normal;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .service-button:hover::before {
+            content: attr(data-description);
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner"></div>
+    <img src="logo.png" alt="Business Logo" width="150">
+    
+    <div class="menu">
+        <div onclick="showContent('home')">Home</div>
+        <div onclick="showContent('about')">About</div>
+        <div onclick="showContent('services')">Services</div>
+        <div onclick="showContent('contact')">Contact</div>
+    </div>
+    
+    <div id="home" class="content active">
+        <h2>Welcome to Our Business</h2>
+        <p>Providing quality services for our customers.</p>
+    </div>
+    
+    <div id="about" class="content">
+        <h2>About Us</h2>
+        <p>We are a company dedicated to excellence.</p>
+    </div>
+    
+    <div id="services" class="content">
+        <h2>Our Services</h2>
+        <p>Explore our range of professional services.</p>
+        <div class="service-button" data-description="Service 1: We provide high-quality solutions tailored to your needs.">Service</div>
+        <div class="service-button" data-description="Service 2: Our team ensures top-notch customer support and expertise.">Service</div>
+        <div class="service-button" data-description="Service 3: We deliver innovative and efficient strategies for success.">Service</div>
+    </div>
+    
+    <div id="contact" class="content">
+        <h2>Contact Us</h2>
+        <p>Reach out for more information.</p>
+    </div>
+    
+    <script>
+        function showContent(section) {
+            document.querySelectorAll('.content').forEach(div => {
+                div.classList.remove('active');
+            });
+            document.getElementById(section).classList.add('active');
+        }
+    </script>
+</body>
+</html>
