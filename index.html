@@ -5,72 +5,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Business Website</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        .banner {
-            width: 100%;
-            height: 200px;
-            background: url('banner.jpg') no-repeat center center/cover;
-        }
-        .menu {
-            display: flex;
-            justify-content: center;
-            background-color: #1E5B37;
-            padding: 10px 0;
-        }
-        .menu div {
-            padding: 15px 20px;
-            color: white;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        .menu div:hover {
-            background-color: #2D7A4B;
-        }
-        .content {
-            display: none;
-        }
-        .content.active {
-            display: block;
-        }
-        .service-button {
-            display: inline-block;
-            width: 200px;
-            height: 80px;
-            background-color: #1E5B37;
-            color: white;
-            text-align: center;
-            line-height: 80px;
-            font-size: 20px;
-            font-weight: bold;
-            margin: 10px;
-            cursor: pointer;
-            transition: transform 0.3s ease, background-color 0.3s ease;
-            overflow: hidden;
-            white-space: nowrap;
-            padding: 0;
-            box-sizing: border-box;
-        }
+       body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.banner {
+    width: 100%;
+    height: 200px;
+    background: url('banner.jpg') no-repeat center center/cover;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    background-color: #1E5B37;
+    padding: 10px 0;
+}
+.menu div {
+    padding: 15px 20px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.menu div:hover {
+    background-color: #2D7A4B;
+}
+.content {
+    display: none;
+}
+.content.active {
+    display: block;
+}
 
-        .service-button:hover {
-            background-color: #2D7A4B;
-            font-size: 18px;
-            line-height: 1.5;
-            transform: scale(1.2); /* Using scale for smooth expansion */
-            padding: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.banner {
+    width: 100%;
+    height: 200px;
+    background: url('banner.jpg') no-repeat center center/cover;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    background-color: #1E5B37;
+    padding: 10px 0;
+}
+.menu div {
+    padding: 15px 20px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.menu div:hover {
+    background-color: #2D7A4B;
+}
+.content {
+    display: none;
+}
+.content.active {
+    display: block;
+}
 
-        .service-button:hover::before {
-            content: attr(data-description);
-            display: block;
-            font-size: 14px;
-            margin-top: 10px;
-        }
+.service-buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-button {
+    display: inline-block;
+    width: 400px;
+    height: 80px;
+    background-color: #1E5B37;
+    color: white;
+    text-align: center;
+    line-height: 80px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform-origin: top;
+}
+
+.service-button .label {
+    display: block;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+}
+
+.service-button .description {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scaleY(calc(1/4));
+    font-size: 20px; /* **INCREASED FONT SIZE** */
+    color: white;
+    padding: 10px;
+    text-align: left; /* **LEFT JUSTIFIED TEXT** */
+    line-height: 1.3; /* Adjusted line height for larger font */
+    white-space: normal;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 90%; /* **ADDED WIDTH for better text wrapping within the button** */
+}
+
+.service-button:hover {
+    background-color: #2D7A4B;
+    transform: scaleY(4);
+}
+
+.service-button:hover .label {
+    opacity: 0;
+}
+
+.service-button:hover .description {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
 
     </style>
 </head>
@@ -96,12 +160,29 @@
     </div>
     
     <div id="services" class="content">
-        <h2>Our Services</h2>
-        <p>Explore our range of professional services.</p>
-        <div class="service-button" data-description="Service 1: We provide high-quality solutions tailored to your needs.">Service</div>
-        <div class="service-button" data-description="Service 2: Our team ensures top-notch customer support and expertise.">Service</div>
-        <div class="service-button" data-description="Service 3: We deliver innovative and efficient strategies for success.">Service</div>
+    <h2>Our Services</h2>
+    <p>Explore our range of professional lawn care and landscaping services.</p>
+    <div class="service-buttons-container">
+        <div class="service-button" data-description="Mowing, edging, fertilization, weed control, and overall lawn health management.">
+            <span class="label">Lawn Care</span>
+            <span class="description">Mowing, edging, fertilization, weed control, and overall lawn health management.</span>
+        </div>
+        <div class="service-button" data-description="Planting, pruning, garden design, soil improvement, and seasonal maintenance.">
+            <span class="label">Gardening</span>
+            <span class="description">Planting, pruning, garden design, soil improvement, and seasonal maintenance.</span>
+        </div>
+        <div class="service-button" data-description="Leaf removal, gutter cleaning, preparing your yard for the changing seasons.">
+            <span class="label">Spring/Fall Cleanup</span>
+            <span class="description">Leaf removal, gutter cleaning, preparing your yard for the changing seasons.</span>
+        </div>
+        <div class="service-button" data-description="Removal of branches, leaves, construction debris, and other unwanted materials.">
+            <span class="label">Debris Removal</span>
+            <span class="description">Removal of branches, leaves, construction debris, and other unwanted materials.</span>
+        </div>
     </div>
+</div>
+
+
     
     <div id="contact" class="content">
         <h2>Contact Us</h2>
