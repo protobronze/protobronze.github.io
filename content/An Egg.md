@@ -1,4 +1,7 @@
 
+---
+title: An Egg
+---
 
 
 an egg of an idea
