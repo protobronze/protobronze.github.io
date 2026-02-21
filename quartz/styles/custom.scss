@@ -1,3 +1,25 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+@font-face {
+  font-family: "MayoClinicSans";
+  src: url("/static/fonts/mayoclinicsans-regular.otf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "MayoClinicSans";
+  src: url("/static/fonts/mayoclinicsans-bold.otf") format("opentype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "MayoClinicSerif";
+  src: url("/static/fonts/mayoclinicserif-regular.otf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "MayoClinicSerif";
+  src: url("/static/fonts/mayoclinicserif-bold.otf") format("opentype");
+  font-weight: 700;
+}
