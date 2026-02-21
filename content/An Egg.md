@@ -1,3 +1,6 @@
+
+
+
 an egg of an idea
 sitting in the pond that is my mind
 it's a landing point for an idea to go once it enters my cerebral domain
