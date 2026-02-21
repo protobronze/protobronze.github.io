@@ -23,3 +23,7 @@
   src: url("/static/fonts/mayoclinicserif-bold.otf") format("opentype");
   font-weight: 700;
 }
+
+.no-meta .content-meta {
+  display: none;
+}
