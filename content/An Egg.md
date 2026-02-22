@@ -31,6 +31,7 @@ It took a bit of learning in the TypeScript realm to begin to troubleshoot, make
 
 For instance, for whatever reason, my quartz install didn't come packaged with a deploy.yml file, so I made one with Claude's help:
 ![[Pasted image 20260221210603.png]]
+
 That 'branches v4' messed me up a bit because for a while there my default branch remained main:
 
 ![[Pasted image 20260221210933.png]]
