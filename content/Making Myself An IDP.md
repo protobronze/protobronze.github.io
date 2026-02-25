@@ -16,7 +16,7 @@ Small to medium sized businesses, especially those that have been in business ma
 
 ## Cloud Infrastructure
 #### Google Cloud Platform
-#### Azure
+#### Azure:
 > [!NOTE]
 > Azure AD Lab - Learning Plan
 > 
@@ -38,17 +38,29 @@ Small to medium sized businesses, especially those that have been in business ma
 > GitHub: [https://github.com/EugeneBelford1995/Polished-Setup-a-simple-AD-lab-in-Azure-with-UI](https://github.com/EugeneBelford1995/Polished-Setup-a-simple-AD-lab-in-Azure-with-UI)
 
 #### AWS
-#### Kubernetes
-<u></u>
-	Linux-based technology built on kernel features (namespaces, chroot, cgroups)
-	Cluster = 1 control plane VM + worker node VMs
-	Worker nodes joined to control plane via kubeadm
-	Kubelet runs on worker nodes, receives instructions from control plane
-	Images built via Dockerfile, a text file containing docker instrcutions + Docker a linux service that build the container based on the dockerfile.
-	The container is then pushed to and stored in registry (Docker Hub, AWS ECR, Azure ACR)
-	Control plane schedules containers on worker nodes, tells them which image to pull from registry Containerd on worker nodes actually runs the containers
-	Each container can contain it's own set of application dependencies and contains only what is needed for a single application to run.
-	This is extremely lean compared to full VMs dedicated to a single app.
+#### Kubernetes:
+
+> [!NOTE]
+> Linux-based technology built on kernel features (namespaces, chroot, cgroups)
+> 	
+> Cluster = 1 control plane VM + worker node VMs
+> 	
+> Worker nodes joined to control plane via kubeadm
+> 	
+> Kubelet runs on worker nodes, receives instructions from control plane
+> 	
+> Images built via Dockerfile, a text file containing docker instrcutions + Docker a linux service that build the container based on the dockerfile.
+> 	
+> The container is then pushed to and stored in registry (Docker Hub, AWS ECR, Azure ACR)
+> 	
+> Control plane schedules containers on worker nodes, tells them which image to pull from registry
+> 
+> Containerd on worker nodes actually runs the containers
+> 	 
+> Each container can contain it's own set of application dependencies and contains only what is needed for a single application to run.
+> 	
+> This is extremely lean compared to full VMs dedicated to a single app.
+
 #### Docker
 <u></u>
 	Linux based
