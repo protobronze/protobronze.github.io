@@ -1,4 +1,5 @@
-## Goal: filling the skill gaps that I think I have
+
+**Goal: filling the skill gaps that I think I have**
 
 Today marks week 4 of my 2026 job hunt. While the general sentiment is futile, the effort remains. As a sysadmin / network engineer, lateral moves seem to be limited to MSPs and other service providers, or local businesses in need of internal IT. 
 
