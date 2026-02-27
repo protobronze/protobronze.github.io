@@ -27,3 +27,4 @@ This was one of those fantasy snow storms where all I had to worry about was cle
 
 Not so much this time around. I am truly uncertain what tomorrow has in store for us. And I'm running out of actionable items to take care of today to prepare. 
 
+**UPDATE:** No loss of power! 3 hours of shoveling and snowblowing historically high snowfall, and life is seemingly back to normal. Circumstantially avoiding any existential threat
