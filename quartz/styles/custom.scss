@@ -1,18 +1,6 @@
 @use "./base.scss";
 
 @font-face {
-  font-family: "MayoClinicSans";
-  src: url("/static/fonts/mayoclinicsans-regular.otf") format("opentype");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "MayoClinicSans";
-  src: url("/static/fonts/mayoclinicsans-bold.otf") format("opentype");
-  font-weight: 700;
-}
-
-@font-face {
   font-family: "MayoClinicSerif";
   src: url("/static/fonts/mayoclinicserif-regular.otf") format("opentype");
   font-weight: 400;
@@ -34,7 +22,7 @@ body[data-slug="index"] .content-meta {
 }
 
 body {
-  font-family: "NotoSansMono", monospace;
+  font-family: "NotoSansMono", monospace !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
