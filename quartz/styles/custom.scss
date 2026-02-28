@@ -27,3 +27,17 @@
 body[data-slug="index"] .content-meta {
   display: none;
 }
+
+@font-face {
+  font-family: "NotoSansMono";
+  src: url("/static/fonts/NotoSansMono-VariableFont_wdth,wght.ttf") format("truetype");
+}
+
+body {
+  font-family: "NotoSansMono", monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "MayoClinicSerif", serif;
+}
+

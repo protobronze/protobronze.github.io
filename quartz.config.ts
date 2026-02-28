@@ -94,4 +94,10 @@ const config: QuartzConfig = {
   },
 }
 
+typography: {
+  header: "MayoClinicSerif",
+  body: "NotoSansMono",
+  code: "IBM Plex Mono",
+},
+
 export default config

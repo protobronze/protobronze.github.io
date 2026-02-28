@@ -20,6 +20,8 @@ Small to medium sized businesses, especially those that have been in business ma
 > [!NOTE]
 > Azure AD Lab - Learning Plan
 > 
+> **Round 0 - GUI:** Full setup using Azure tenant admin
+> 
 > **Round 1 — Manual:** Every command entered by hand. Know what each line does before running it. VNet, subnet, NSG, static IP — build it yourself, understand it yourself.
 > 
 > **Round 2 — PS1 in ISE**: Run the scripts, follow along. Same knowledge, now automated. Repeatable process.
