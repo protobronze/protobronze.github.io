@@ -23,9 +23,9 @@ const config: QuartzConfig = {
       fontOrigin: "local",
       cdnCaching: true,
       typography: {
-         header: "MayoClinicSerif",
-         body: "MayoClinicSans",
-         code: "IBM Plex Mono",
+        header: "MayoClinicSerif",
+        body: "NotoSansMono",
+        code: "IBM Plex Mono",
       },
       colors: {
         lightMode: {
@@ -94,10 +94,6 @@ const config: QuartzConfig = {
   },
 }
 
-typography: {
-  header: "MayoClinicSerif",
-  body: "NotoSansMono",
-  code: "IBM Plex Mono",
-},
+
 
 export default config
